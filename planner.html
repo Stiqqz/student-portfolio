@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Academic portfolio and planner of Your Name, a Computer Science student at MIVA Open University.">
+<title>Planner | Ikechukwu Okoronkwo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="index.html">Ikechukwu Okoronkwo</a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav aria-label="Main"><ul id="menu" class="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</header>
+<main id="main">
+<section class="section">
+  <h1>Academic planner</h1>
+  <p class="measure lead">Add what you need to do. Tick it off when it's done. Your list stays in this browser.</p>
+  <form id="task-form" class="inline-form" novalidate>
+    <label for="task-input" class="sr">New task</label>
+    <input id="task-input" type="text" placeholder="e.g. Finish COS 106 term project" autocomplete="off">
+    <label for="task-due" class="sr">Due date</label>
+    <input id="task-due" type="date">
+    <button class="btn" type="submit">Add task</button>
+  </form>
+  <p id="task-error" class="error" role="alert"></p>
+  <p id="task-count" class="count" aria-live="polite"></p>
+  <ul id="task-list" class="tasks"></ul>
+  <p id="task-empty" class="empty">No tasks yet. Add your first one above.</p>
+  <button id="clear-done" class="btn ghost small" type="button">Clear completed</button>
+</section>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 Iyke &middot; COS 106 Term Project &middot; MIVA Open University</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
